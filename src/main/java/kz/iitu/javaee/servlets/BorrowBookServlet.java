@@ -2,7 +2,6 @@ package kz.iitu.javaee.servlets;
 
 import kz.iitu.javaee.Book;
 import kz.iitu.javaee.DBConnection;
-import kz.iitu.javaee.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(value = "/deleteBook")
-public class deleteBookServlet extends HttpServlet {
+@WebServlet(value = "/borrowBook")
+public class BorrowBookServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -20,15 +19,16 @@ public class deleteBookServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DBConnection dbConnection = new DBConnection();
 
-        int id=Integer.parseInt(request.getParameter("id"));
-        Book book = dbConnection.getBookById(id);
+        int bookId=Integer.parseInt(request.getParameter("id"));
+        Book book = dbConnection.getBookById(bookId);
 
         if(book !=null){
-            int addedBook = dbConnection.deleteBook(id);
+            int userId = (Integer) request.getSession(false).getAttribute("userId");
+            int borrowed = dbConnection.borrowBook(userId, book);
 
-            if(addedBook!=0)
+            if(borrowed!=0)
             {
-                request.setAttribute("message", "Book "+book.getTitle()+" deleted!");
+                request.setAttribute("message", "Book "+book.getTitle()+" borrowed by You successfully!");
                 request.getRequestDispatcher("allBooks.jsp").forward(request, response);
             }
         }

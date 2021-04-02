@@ -24,7 +24,7 @@ input{
     width: 400px;
 }
 
-div, form{
+div, form, table{
     margin: 20px auto;
     width: 30%;
     border: 1px solid;

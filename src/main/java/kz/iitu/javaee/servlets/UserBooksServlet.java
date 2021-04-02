@@ -2,7 +2,6 @@ package kz.iitu.javaee.servlets;
 
 import kz.iitu.javaee.Book;
 import kz.iitu.javaee.DBConnection;
-import kz.iitu.javaee.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(value = "/userBooks")
-public class UserBorrowedBooksServlet extends HttpServlet {
+public class UserBooksServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -23,17 +22,22 @@ public class UserBorrowedBooksServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DBConnection dbConnection = new DBConnection();
         int userId = (Integer) request.getSession(false).getAttribute("userId");
+        String status = request.getParameter("status");
 
         List<Book> books = new ArrayList<Book>();
-        List<Integer> bookIds = dbConnection.getUserBooks(userId);
+        List<Integer> bookIds = dbConnection.getUserBooks(userId, status);
         for (Integer id:bookIds) {
             Book b=dbConnection.getBookById(id);
             books.add(b);
         }
-        request.setAttribute("borrowedBooks", books);
-        PrintWriter o=response.getWriter();
-        o.println(books.toString());
 
-        request.getRequestDispatcher("/reportBorrowedBooks.jsp").forward(request, response);
+        if(status.equals("borrowed")){
+            request.setAttribute("borrowedBooks", books);
+            request.getRequestDispatcher("/userBorrowed.jsp").forward(request, response);
+        }else if(status.equals("returned")){
+            request.setAttribute("returnedBooks", books);
+            request.getRequestDispatcher("/userReturned.jsp").forward(request, response);
+        }
+
     }
 }

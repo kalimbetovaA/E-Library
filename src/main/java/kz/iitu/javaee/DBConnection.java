@@ -12,6 +12,7 @@ public class DBConnection {
     Connection connection;
     Statement statement;
 
+
     public DBConnection() {
         connect();
     }
@@ -51,6 +52,29 @@ public class DBConnection {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
+        return user;
+    }
+
+    public User getUserById(int userId){
+
+        String sqlString = "SELECT * FROM users WHERE user_id=" + userId;
+        User user = new User();
+        try {
+            ResultSet resultSet = statement.executeQuery(sqlString);
+            while (resultSet.next()) {
+                user.setUserId(resultSet.getInt("user_id"));
+                user.setUsername(resultSet.getString("username"));
+                user.setFullname(resultSet.getString("fullname"));
+                user.setEmail(resultSet.getString("email"));
+                user.setPassword(resultSet.getString("password"));
+                user.setRole(resultSet.getString("role"));
+            }
+        } catch (SQLException e) {
+            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return user;
     }
@@ -176,10 +200,16 @@ public class DBConnection {
 
     public int borrowBook(int userId, Book book){
 
-        String sqlString = "insert into users_book (user_id, book_id) values("
-                +userId+", "
-                +book.getBookId()+")";
-
+        int row = hasUserBook(userId, book.getBookId());
+        String sqlString;
+        if(row!=0){
+            sqlString = "update users_book set status='borrowed' where book_id="+book.getBookId()+" and user_id="+userId;
+        }else{
+            sqlString = "insert into users_book (user_id, book_id, status) values("
+                    +userId+", "
+                    +book.getBookId()+", "
+                    + "'borrowed' )";
+        }
 
         int result=0;
         try{
@@ -190,9 +220,9 @@ public class DBConnection {
         return result;
     }
 
-    public List<Integer> getUserBooks(int userId){
+    public List<Integer> getUserBooks(int userId, String status){
 
-        String sqlString = "SELECT * FROM users_book where user_id="+userId;
+        String sqlString = "SELECT * FROM users_book where status='"+status+"' and user_id="+userId;
         List<Integer> bookIds = new ArrayList<Integer>();
         try {
             ResultSet resultSet = statement.executeQuery(sqlString);
@@ -207,5 +237,60 @@ public class DBConnection {
 
         return bookIds;
     }
+
+    public int hasUserBook(int userId, int bookId){
+
+        String sqlString = "SELECT count(*) as row_count FROM users_book WHERE user_id=" + userId+" and book_id=" + bookId;
+        int row_count=0;
+        try {
+            ResultSet resultSet = statement.executeQuery(sqlString);
+            while (resultSet.next()) {
+                row_count=resultSet.getInt("row_count");
+            }
+        } catch (SQLException e) {
+            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return row_count;
+    }
+
+    public List<UserAndBooks> getAllUsersBooks(String status){
+
+        String sqlString = "SELECT * FROM users_book where status='"+status+"'";
+        List<UserAndBooks> usersBooks = new ArrayList<UserAndBooks>();
+        try {
+            ResultSet resultSet = statement.executeQuery(sqlString);
+            while (resultSet.next()) {
+                UserAndBooks userBook=new UserAndBooks();
+                userBook.setUserId(resultSet.getInt("user_id"));
+                userBook.setBookId(resultSet.getInt("book_id"));
+                userBook.setStatus(resultSet.getString("status"));
+                usersBooks.add(userBook);
+            }
+        } catch (SQLException e) {
+            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return usersBooks;
+    }
+
+
+    public int returnBook(int userId, Book book){
+
+        String sqlString = "update users_book set status='returned' where book_id="+book.getBookId()+" and user_id="+userId;
+
+        int result=0;
+        try{
+            result = statement.executeUpdate(sqlString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 
 }

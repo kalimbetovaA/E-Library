@@ -9,26 +9,11 @@
     <title>Main page</title>
 </head>
 <body>
-<nav>
-    <a href="allBooks.jsp">Library Books</a>
-    <%
-        if(session.getAttribute("role").equals("admin")){
-    %>
-    <a href="listUsers">Users</a>
-    <%
-        }
-    %>
-    <%
-        if(session.getAttribute("role").equals("user")){
-    %>
-    <a href="userBooks">Borrowed Books</a>
-    <%
-        }
-    %>
-    <a href="logout">Log out</a>
-</nav>
-
+<%-- using Directive include --%>
+<%@ include file="header.jsp" %>
 <h2>
+    <%-- using Scriplet expression --%>
+    <%-- using Implicit Object session--%>
     <%=session.getAttribute("username")%>'s main page
 </h2>
 

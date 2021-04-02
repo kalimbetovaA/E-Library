@@ -12,36 +12,24 @@
     <title><%=session.getAttribute("username")%>'s borrowed books</title>
 </head>
 <body>
-<nav>
-    <a href="index.jsp">Main</a>
-    <a href="allBooks.jsp">Library Books</a>
-    <%
-        if(session.getAttribute("role").equals("admin")){
-    %>
-    <a href="listUsers">Users</a>
-    <%
-        }
-    %>
-    <a href="logout">Log out</a>
-</nav>
+<%-- using Directive include --%>
+<%@ include file="header.jsp" %>
 
+<%-- using Implicit Object session--%>
+<%-- using Implicit Object request--%>
 <h2><%=session.getAttribute("username")%>'s borrowed books</h2>
 <%
     List<Book> books = (ArrayList<Book>)request.getAttribute("borrowedBooks");
     if(books!=null){
         for(Book book : books){
 %>
-<div>
-    <h3>
-        <%=book.getTitle()%>
-    </h3>
-    <p>
-        Description: <%=book.getDescription()%>
-    </p>
-    <p>
-        Genre: <%=book.getGenre()%>
-    </p>
-</div>
+            <%-- using ACTION TAG jsp:include--%>
+            <%-- using ACTION TAG jsp:param--%>
+            <jsp:include page="book.jsp" >
+                <jsp:param name="bookId" value="<%=book.getBookId()%>" />
+                <jsp:param name="bookTitle" value="<%=book.getTitle()%>" />
+                <jsp:param name="bookGenre" value="<%=book.getGenre()%>" />
+            </jsp:include>
     <%
             }
         }

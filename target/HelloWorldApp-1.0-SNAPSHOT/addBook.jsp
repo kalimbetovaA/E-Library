@@ -9,16 +9,11 @@
     <title>Add Book</title>
 </head>
 <body>
-<nav>
-    <a href="index.jsp">Main page</a>
-    <a href="allBooks.jsp">Books</a>
-    <a href="logout">Log out</a>
-</nav>
-
+<%-- using Directive include --%>
+<%@ include file="header.jsp" %>
 <form action="addBook" method="POST">
-    <p> <%=(request.getAttribute("errMessage") == null) ? ""
-            : request.getAttribute("errMessage")%>
-    </p>
+    <%-- using Implicit Object request--%>
+    <p> <%=(request.getAttribute("errMessage") == null) ? "": request.getAttribute("errMessage")%></p>
     <h2>Enter new Book Info</h2>
     <label>Title:</label><br>
     <input type="text" name="title"><br><br>

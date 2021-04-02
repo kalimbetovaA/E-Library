@@ -13,11 +13,9 @@
     <title>Users in the System</title>
 </head>
 <body>
-<nav>
-    <a href="index.jsp">Main</a>
-    <a href="allBooks.jsp">Library Books</a>
-    <a href="logout">Log out</a>
-</nav>
+<%-- using Directive include --%>
+<%@ include file="header.jsp" %>
+
 <h2>Users in the System</h2>
 <%
     List<User> users = (ArrayList<User>)request.getAttribute("users");
