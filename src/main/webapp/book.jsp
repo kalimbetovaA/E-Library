@@ -1,5 +1,5 @@
 <%-- using Directive page --%>
-<%@ page import="kz.iitu.javaee.Book" %>
+<%@ page import="kz.iitu.javaee.models.Book" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 

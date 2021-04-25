@@ -1,8 +1,8 @@
 <%-- using Directive page --%>
 <%@ page import="kz.iitu.javaee.DBConnection" %>
-<%@ page import="kz.iitu.javaee.Book" %>
-<%@ page import="kz.iitu.javaee.UserAndBooks" %>
-<%@ page import="kz.iitu.javaee.User" %>
+<%@ page import="kz.iitu.javaee.models.Book" %>
+<%@ page import="kz.iitu.javaee.models.UserAndBooks" %>
+<%@ page import="kz.iitu.javaee.models.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%-- using ACTION TAG jsp:useBean--%>

@@ -1,5 +1,9 @@
 package kz.iitu.javaee;
 
+import kz.iitu.javaee.models.Book;
+import kz.iitu.javaee.models.User;
+import kz.iitu.javaee.models.UserAndBooks;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

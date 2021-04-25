@@ -1,6 +1,6 @@
 <%-- using Directive page --%>
 <%@ page import="java.util.List" %>
-<%@ page import="kz.iitu.javaee.Book" %>
+<%@ page import="kz.iitu.javaee.models.Book" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%-- using ACTION TAG jsp:useBean--%>

@@ -1,8 +1,7 @@
 package kz.iitu.javaee.servlets;
 
-import kz.iitu.javaee.Book;
+import kz.iitu.javaee.models.Book;
 import kz.iitu.javaee.DBConnection;
-import kz.iitu.javaee.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(value = "/addBook")
 public class AddBookServlet extends HttpServlet {

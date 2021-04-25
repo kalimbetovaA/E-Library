@@ -1,6 +1,6 @@
 package kz.iitu.javaee.servlets;
 
-import kz.iitu.javaee.Book;
+import kz.iitu.javaee.models.Book;
 import kz.iitu.javaee.DBConnection;
 
 import javax.servlet.ServletException;
@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 

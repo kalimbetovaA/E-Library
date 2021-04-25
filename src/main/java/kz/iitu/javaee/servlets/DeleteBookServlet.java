@@ -1,8 +1,7 @@
 package kz.iitu.javaee.servlets;
 
-import kz.iitu.javaee.Book;
+import kz.iitu.javaee.models.Book;
 import kz.iitu.javaee.DBConnection;
-import kz.iitu.javaee.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

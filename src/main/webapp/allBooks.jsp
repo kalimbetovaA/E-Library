@@ -1,5 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="kz.iitu.javaee.Book" %>
+<%@ page import="kz.iitu.javaee.models.Book" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%-- using ACTION TAG jsp:useBean--%>
 <jsp:useBean id="dbConnection" class="kz.iitu.javaee.DBConnection" />
