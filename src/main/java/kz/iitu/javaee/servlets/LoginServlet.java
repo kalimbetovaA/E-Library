@@ -2,7 +2,7 @@ package kz.iitu.javaee.servlets;
 
 
 import kz.iitu.javaee.models.User;
-import kz.iitu.javaee.DBConnection;
+import kz.iitu.javaee.models.DBConnection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

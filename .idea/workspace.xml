@@ -2,77 +2,103 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ELibrary:war exploded" />
+      <artifact name="HelloWorldApp:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
-  </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65614d3a-8aa7-43fc-bef8-37d3ecc67e17" name="Default Changelist" comment="">
+    <list default="true" id="696b1832-b7bb-4087-bb78-94b97249235c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/HelloWorldApp_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/HelloWorldApp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_42.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ELibrary.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/UserAndBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/models/UserAndBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorldApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorldApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/models/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/AddBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/AddBookServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/BorrowBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/BorrowBookServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/DeleteBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/DeleteBookServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/ListAllUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/ListAllUsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/filters/LogFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/filters/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/RegistrationServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/ReturnBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/ReturnBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/SessionValidationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/filters/SessionValidationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/UserBooksServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/javaee/servlets/UserBooksServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addBook.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/allBooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/allBooks.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/allUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/allUsers.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/book.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/borrowedBooksReport.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/borrowedBooksReport.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userBorrowed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userBorrowed.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userReturned.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userReturned.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/UserAndBooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/LogFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/ReturnBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/ReturnBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/SessionValidationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/UserBooksServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/UserBooksServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/addBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/addBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/borrowBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/borrowBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/deleteBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/deleteBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/listAllUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/WEB-INF/classes/kz/iitu/javaee/servlets/listAllUsersServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/addBook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/allBooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/allBooks.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/allUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/allUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/book.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/bookDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/bookDetail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/borrowedBooksReport.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/borrowedBooksReport.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/userBorrowed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/userBorrowed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/userReturned.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HelloWorldApp-1.0-SNAPSHOT/userReturned.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/UserAndBooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/LogFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/ReturnBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/ReturnBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/SessionValidationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/UserBooksServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/UserBooksServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/addBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/addBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/borrowBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/borrowBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/deleteBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/deleteBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/listAllUsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/javaee/servlets/listAllUsersServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="PARALLEL_COMPILATION" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="jsf" />
-        <option value="Class" />
-        <option value="Jsp File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,143 +110,52 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../Program Files/JetBrains/IntelliJ IDEA 2020.2.3/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1nq9y3hEDlQ26nUeNbeDYCsS4J6" />
+  <component name="ProjectId" id="1sDQEK30aJDx4pN0aergAHugfbW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\kalim\Downloads\HelloWorldApp\HelloWorldApp\src\main\webapp" />
-      <recent name="C:\Users\kalim\Downloads\HelloWorldApp\HelloWorldApp\src\main\webapp\WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="kz.iitu.javaee.servlets" />
-      <recent name="kz.iitu.javaee" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\webapp" />
-      <recent name="$PROJECT_DIR$/src/main/web" />
-      <recent name="$PROJECT_DIR$/src/main/java/webapp" />
-      <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Start" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 3.1.2.1-SNAPSHOT" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8.0_101">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
-      <server-settings>
-        <option name="DOMAIN" value="domain1" />
-        <option name="PRESERVE" value="false" />
-        <option name="COMPATIBILITY" value="false" />
-        <option name="VIRTUAL_SERVER" />
-        <option name="USERNAME" value="admin" />
-        <option name="CREDENTIAL_ALIAS" value="b6455c4a-8b61-45e2-bb2a-b25e554dc3f8" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="9009" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ELibrary:war exploded">
+        <artifact name="HelloWorldApp:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_HelloWorldApp_2" />
-        <option name="HTTP_PORT" value="8091" />
+        <option name="BASE_DIRECTORY_NAME" value="4a900314-c08f-44fe-9c8b-6a273ba422e8" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -228,7 +163,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57536" />
+        <option name="DEBUG_PORT" value="52436" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -293,55 +228,23 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ELibrary:war exploded" />
+          <artifact name="HelloWorldApp:war exploded" />
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="GlassFish Server.Start" />
-      <item itemvalue="Tomcat Server.Tomcat 9" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="65614d3a-8aa7-43fc-bef8-37d3ecc67e17" name="Default Changelist" comment="" />
-      <created>1612107004210</created>
+      <changelist id="696b1832-b7bb-4087-bb78-94b97249235c" name="Default Changelist" comment="" />
+      <created>1620404591463</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1612107004210</updated>
-      <workItem from="1612107009711" duration="5302000" />
-      <workItem from="1612718880333" duration="3096000" />
-      <workItem from="1613902366294" duration="2926000" />
-      <workItem from="1614514481275" duration="3211000" />
-      <workItem from="1615746653325" duration="371000" />
-      <workItem from="1615747639500" duration="327000" />
-      <workItem from="1615748686559" duration="17346000" />
-      <workItem from="1615766886844" duration="64000" />
-      <workItem from="1615767048625" duration="730000" />
-      <workItem from="1615768192845" duration="281000" />
-      <workItem from="1615779731683" duration="1946000" />
-      <workItem from="1617120482835" duration="602000" />
-      <workItem from="1617199159315" duration="12632000" />
-      <workItem from="1617329051491" duration="2879000" />
-      <workItem from="1617332067127" duration="5331000" />
-      <workItem from="1617357558724" duration="10010000" />
-      <workItem from="1617979906814" duration="687000" />
-      <workItem from="1617983201976" duration="4836000" />
-      <workItem from="1618205092065" duration="4523000" />
-      <workItem from="1618224072970" duration="5046000" />
-      <workItem from="1618230423788" duration="13000" />
-      <workItem from="1619343216416" duration="1683000" />
-      <workItem from="1619351485307" duration="1095000" />
-      <workItem from="1619352694861" duration="1888000" />
-      <workItem from="1619354711233" duration="4776000" />
-      <workItem from="1619361820229" duration="226000" />
-      <workItem from="1619362148804" duration="1185000" />
-      <workItem from="1619368454605" duration="1877000" />
-      <workItem from="1619370522901" duration="329000" />
+      <updated>1620404591463</updated>
+      <workItem from="1620404614524" duration="665000" />
+      <workItem from="1620405347492" duration="366000" />
+      <workItem from="1620406045881" duration="1746000" />
+      <workItem from="1620544411524" duration="12505000" />
     </task>
     <servers />
   </component>
@@ -349,15 +252,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

@@ -5,17 +5,17 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ELibrary</title>
 </head>
 <body>
 <%-- using Directive include --%>
 <%@ include file="header.jsp" %>
-<h2>
-    <%-- using Scriplet expression --%>
-    <%-- using Implicit Object session--%>
-    <%=session.getAttribute("username")%>'s main page
-</h2>
+<div class="img">
+    <h2>
+        ELibrary - get all your favorite books
+    </h2>
+</div>
 
 </body>
 </html>

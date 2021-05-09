@@ -1,7 +1,7 @@
 package kz.iitu.javaee.servlets;
 
 import kz.iitu.javaee.models.Book;
-import kz.iitu.javaee.DBConnection;
+import kz.iitu.javaee.models.DBConnection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,7 +28,7 @@ public class ReturnBookServlet extends HttpServlet {
 
             if(returned!=0)
             {
-                request.setAttribute("message", "Book "+book.getTitle()+" returned successfully!");
+                request.setAttribute("message", "Book '"+book.getTitle()+"' returned successfully!");
                 request.getRequestDispatcher("allBooks.jsp").forward(request, response);
             }
         }

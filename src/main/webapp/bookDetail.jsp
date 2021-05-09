@@ -4,7 +4,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%-- using ACTION TAG jsp:useBean--%>
-<jsp:useBean id="dbConnection" class="kz.iitu.javaee.DBConnection" />
+<jsp:useBean id="dbConnection" class="kz.iitu.javaee.models.DBConnection" />
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 
@@ -18,7 +18,7 @@
 %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <%-- using Scriplet expression --%>
     <title><%=book.getTitle()%></title>
 </head>
@@ -26,7 +26,7 @@
 
 <%-- using Directive include --%>
 <%@ include file="header.jsp" %>
-<div>
+<div id="main">
     <h3>
         <%=book.getTitle()%>
     </h3>

@@ -1,0 +1,116 @@
+html{
+    background: rgb(245 245 245);
+}
+nav{
+    padding: 20px;
+    text-align: right;
+}
+nav a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: rgb(179 77 0);
+    font-weight: bold;
+}
+input{
+    margin: 5px 0;
+    padding: 5px 10px;
+    width: 90%;
+    border: #efe8e8 solid 1px;
+    border-radius: 5px;
+}
+
+.message{
+    background-color: rgb(205, 228, 119);
+    padding: 10px;
+    font-weight: bold;
+}
+
+form{
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 5px;
+    padding: 0 30px 30px;
+}
+table{
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+}
+table th, td{
+    padding: 8px;
+}
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {background-color: #ddd;}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f8ba56;
+    color: white;
+}
+
+div{
+    width: 15%;
+    border-radius: 5px;
+    padding: 0 30px 30px;
+    float: left;
+    height: 230px;
+    margin: 20px;
+    background: white;
+}
+h2, h3, p{
+    text-align: center;
+}
+label{
+    margin-top: 5px;
+}
+
+button{
+    background: #f8ba56;
+    border: none;
+    border-radius: 45px;
+    padding: 10px 15px;
+    color: white;
+}
+p.error {
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: lightcoral;
+}
+#main{
+    width: 95%;
+    border: none;
+    padding: 0;
+    background: #f5f7f9;
+}
+h3{
+    height: 60px;
+    color: rgb(191 105 40);
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.borrow-btn{
+    background: rgb(204 227 118);
+}
+.return-btn{
+    background: #ff643f;
+}
+.delete-btn{
+    background: #e51b33;
+}
+.add-btn{
+    background: rgb(205, 228, 119);
+    text-align: left;
+    margin-left: 20px;
+}
+.img{
+    background-image: url("images/main-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 95%;
+    border: none;
+    padding: 0;
+}

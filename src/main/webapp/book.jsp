@@ -4,7 +4,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%-- using ACTION TAG jsp:useBean--%>
-<jsp:useBean id="dbConnection" class="kz.iitu.javaee.DBConnection" />
+<jsp:useBean id="dbConnection" class="kz.iitu.javaee.models.DBConnection" />
 
     <%-- using Scriplet statement --%>
     <%-- using Implicit Object request--%>
@@ -22,14 +22,14 @@
             <b>Genre:</b> <%=bookGenre%>
         </p>
         <p>
-            <a href="bookDetail.jsp?id=<%=bookId%>">Book details</a>
+            <button><a href="bookDetail.jsp?id=<%=bookId%>">Book details</a></button>
         </p>
         <%-- using Implicit Object session--%>
         <%
             if(session.getAttribute("role").equals("admin")){
         %>
         <p>
-            <button><a href="deleteBook?id=<%=bookId%>">Delete</a></button>
+            <button class="delete-btn"><a href="deleteBook?id=<%=bookId%>">Delete</a></button>
         </p>
         <%-- using Implicit Object session--%>
         <%
@@ -40,13 +40,13 @@
                 if(!bookIds.contains(bookId)){
         %>
         <p>
-            <a href="borrowBook?id=<%=bookId%>">Borrow</a>
+            <button class="borrow-btn"><a href="borrowBook?id=<%=bookId%>">Borrow</a></button>
         </p>
 
         <%-- using Implicit Object out--%>
         <%
                 }else{
-                    out.print("<p><a href='returnBook?id="+bookId+"'>Return</a></p>");
+                    out.print("<p><button class='return-btn'><a href='returnBook?id="+bookId+"'>Return</a></button></p>");
                 }
             }
         %>

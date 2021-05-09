@@ -1,7 +1,7 @@
 package kz.iitu.javaee.servlets;
 
 import kz.iitu.javaee.models.Book;
-import kz.iitu.javaee.DBConnection;
+import kz.iitu.javaee.models.DBConnection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,7 +27,7 @@ public class DeleteBookServlet extends HttpServlet {
 
             if(addedBook!=0)
             {
-                request.setAttribute("message", "Book "+book.getTitle()+" deleted!");
+                request.setAttribute("message", "Book '"+book.getTitle()+"' deleted!");
                 request.getRequestDispatcher("allBooks.jsp").forward(request, response);
             }
         }

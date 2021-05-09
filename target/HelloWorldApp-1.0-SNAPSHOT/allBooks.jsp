@@ -1,29 +1,34 @@
 <%@ page import="java.util.List" %>
-<%@ page import="kz.iitu.javaee.Book" %>
+<%@ page import="kz.iitu.javaee.models.Book" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%-- using ACTION TAG jsp:useBean--%>
-<jsp:useBean id="dbConnection" class="kz.iitu.javaee.DBConnection" />
+<jsp:useBean id="dbConnection" class="kz.iitu.javaee.models.DBConnection" />
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Books in Library</title>
 </head>
 <body>
 <%-- using Directive include --%>
 <%@ include file="header.jsp" %>
 
-<%-- Show error message if it exists --%>
-<p class="message"><%=(request.getAttribute("message") == null) ? "" : request.getAttribute("message")%></p>
+<div id="main">
+    <%-- Show error message if it exists --%>
+    <%
+        if(request.getAttribute("message") != null){
+    %>
+        <p class="message"><%=request.getAttribute("message")%></p>
+        <%}%>
 
-<h2>Books in Library</h2>
+    <h2>Books in Library</h2>
 <%
     if(session.getAttribute("role").equals("admin")){
 %>
-        <p><a href="addBook.jsp">Add Book</a></p>
+        <p><button class="add-btn"><a href="addBook.jsp">Add Book</a></button></p>
 <%}
 
     List<Book> books = dbConnection.getBooks();
@@ -41,5 +46,6 @@
             }
         }
 %>
+</div>
 </body>
 </html>

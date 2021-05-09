@@ -1,18 +1,18 @@
 <%-- using Directive page --%>
-<%@ page import="kz.iitu.javaee.DBConnection" %>
+<%@ page import="kz.iitu.javaee.models.DBConnection" %>
 <%@ page import="kz.iitu.javaee.models.Book" %>
 <%@ page import="kz.iitu.javaee.models.UserAndBooks" %>
 <%@ page import="kz.iitu.javaee.models.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%-- using ACTION TAG jsp:useBean--%>
-<jsp:useBean id="dbConnection" class="kz.iitu.javaee.DBConnection" />
+<jsp:useBean id="dbConnection" class="kz.iitu.javaee.models.DBConnection" />
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Borrowed Books Report</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
 <%@ include file="header.jsp" %>
 
 <h2>Borrowed Books Report</h2>
-<table width="60%">
+<table width="80%">
     <tr>
         <th>User Full Name</th>
         <th>Username</th>

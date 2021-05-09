@@ -9,7 +9,7 @@
 
     <filter>
         <filter-name>f1</filter-name>
-        <filter-class>kz.iitu.javaee.servlets.LogFilter</filter-class>
+        <filter-class>kz.iitu.javaee.filters.LogFilter</filter-class>
     </filter>
 
     <filter-mapping>
@@ -19,7 +19,7 @@
 
     <filter>
         <filter-name>f2</filter-name>
-        <filter-class>kz.iitu.javaee.servlets.SessionValidationFilter</filter-class>
+        <filter-class>kz.iitu.javaee.filters.SessionValidationFilter</filter-class>
     </filter>
 
     <filter-mapping>

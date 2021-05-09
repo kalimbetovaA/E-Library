@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ELibrary" />
+        <module name="HelloWorldApp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ELibrary" target="1.5" />
+      <module name="HelloWorldApp" target="15" />
+    </bytecodeTargetLevel>
   </component>
 </project>

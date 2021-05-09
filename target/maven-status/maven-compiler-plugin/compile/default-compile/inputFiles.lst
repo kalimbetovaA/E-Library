@@ -1,0 +1,15 @@
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\ListAllUsersServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\UserBooksServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\DeleteBookServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\RegistrationServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\models\Book.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\filters\LogFilter.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\AddBookServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\filters\SessionValidationFilter.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\LoginServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\ReturnBookServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\models\DBConnection.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\models\User.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\filters\LogoutServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\servlets\BorrowBookServlet.java
+C:\Users\kalim\Desktop\Other Study Files\ELibrary\src\main\java\kz\iitu\javaee\models\UserAndBooks.java
