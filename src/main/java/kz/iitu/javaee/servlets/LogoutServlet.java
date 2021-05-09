@@ -1,4 +1,4 @@
-package kz.iitu.javaee.filters;
+package kz.iitu.javaee.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
